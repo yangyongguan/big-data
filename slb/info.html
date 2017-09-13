@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>个人随记</title>
+</head>
+<style>
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+  }
+  html {
+    font-size: 100px;
+  }
+  /*html{font-size: 24vw}*/
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: 85.3px;
+    }
+  }
+  @media screen and (min-width: 360px) {
+    html {
+      font-size: 96px;
+    }
+  }
+  @media screen and (min-width: 400px) {
+    html {
+      font-size: 106.6px;
+    }
+  }
+  @media screen and (min-width: 440px) {
+    html {
+      font-size: 117.3px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    html {
+      font-size: 128px;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 170.6px;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    html {
+      font-size: 200px;
+    }
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, menu, nav, section {
+    display: block;
+  }
+  html,body{
+    line-height: 1;
+    font-size: 10px;
+  }
+  .content{
+    padding: 2rem 1.5rem;
+  }
+  .title h1{
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .title p span{
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+  }
+  .title p span:nth-child(1){
+    color: #888;
+  }
+  .title p span:nth-child(2){
+    color: #22ccff;
+    padding-left: 1rem;
+  }
+  .content article{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding:1rem 0;
+  }
+  .images img{
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  [v-cloak]{ display: none;}
+  #layerId{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 8px;
+
+  }
+</style>
+<body>
+<div id="app">
+  <span id="layerId"></span>
+  <div class="content" v-cloak>
+    <div class="title">
+      <h1>{{xcsjInfo.ftitle}}</h1>
+      <p>
+        <span>{{xcsjInfo.fcreateAt}}</span>
+        <span>{{xcsjInfo.name}}</span>
+      </p>
+    </div>
+    <div class="images">
+      <img :src="photo.sourcePhotoURL" v-for="photo in xcsjInfo.listPhoto">
+    </div>
+    <article>{{xcsjInfo.ftitle}}</article>
+  </div>
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
+<script>
+  function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+  }
+  var app = new Vue({
+    el: '#app',
+    data: {
+      xcsjInfo:{}
+    },
+    created:function(){
+      this.queryInfo(GetQueryString('fid'));
+    },
+    methods:{
+      queryInfo(fid){
+        let _this = this;
+        axios({
+          method: 'get',
+          url: 'http://202.106.10.250:8988/ttravel/selectgetIdWeibo?fid='+fid
+        }).then(function(res){
+          if(res.data.msg=='success'){
+            _this.xcsjInfo = res.data.data;
+          }else{
+            var dom = document.getElementById('layerId');
+            dom.innerText = res.data.msg;
+            dom.style.display = 'block';
+            setTimeout(function(){
+              dom.style.display = 'none';
+            },2000);
+          }
+        }).catch(function(error){
+          var dom = document.getElementById('layerId');
+          dom.innerText = '网络异常';
+          dom.style.display = 'block';
+          setTimeout(function(){
+            dom.style.display = 'none';
+          },2000);
+        });
+      }
+    }
+  });
+</script>
+

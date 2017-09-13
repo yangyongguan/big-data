@@ -1,0 +1,15 @@
+{
+  "code": 1,
+  "msg": "success",
+  "data": {
+    "userId": 216,
+    "username": "988062765",
+    "name": "杨勇冠",
+    "url": "http://202.106.10.250:8988/img/uploads/201708/89059123-5bca-48d3-a527-51777a332866t.png",
+    "h_username": "216",
+    "h_password": "216",
+    "phoneNumber": "17600801597",
+    "isBang": 0,
+    "companyId": 2
+  }
+}
