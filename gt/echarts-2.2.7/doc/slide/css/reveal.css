@@ -1455,10 +1455,10 @@ body {
  	opacity: 0;
  	visibility: hidden;
 
- 	-webkit-transition: all 0.3s ease;
- 	   -moz-transition: all 0.3s ease;
- 	    -ms-transition: all 0.3s ease;
- 	        transition: all 0.3s ease;
+ 	-webkit-transition: background 0.3s,border 0.3s; ease;
+ 	   -moz-transition: background 0.3s,border 0.3s; ease;
+ 	    -ms-transition: background 0.3s,border 0.3s; ease;
+ 	        transition: background 0.3s,border 0.3s; ease;
  }
  	.reveal .preview-link-overlay.visible {
  		opacity: 1;
@@ -1479,10 +1479,10 @@ body {
  		visibility: visible;
  		opacity: 0.6;
 
- 		-webkit-transition: all 0.3s ease;
- 		   -moz-transition: all 0.3s ease;
- 		    -ms-transition: all 0.3s ease;
- 		        transition: all 0.3s ease;
+ 		-webkit-transition: background 0.3s,border 0.3s; ease;
+ 		   -moz-transition: background 0.3s,border 0.3s; ease;
+ 		    -ms-transition: background 0.3s,border 0.3s; ease;
+ 		        transition: background 0.3s,border 0.3s; ease;
  	}
 
  	.reveal .preview-link-overlay header {
@@ -1541,10 +1541,10 @@ body {
  		opacity: 0;
  		visibility: hidden;
 
- 		-webkit-transition: all 0.3s ease;
- 		   -moz-transition: all 0.3s ease;
- 		    -ms-transition: all 0.3s ease;
- 		        transition: all 0.3s ease;
+ 		-webkit-transition: background 0.3s,border 0.3s; ease;
+ 		   -moz-transition: background 0.3s,border 0.3s; ease;
+ 		    -ms-transition: background 0.3s,border 0.3s; ease;
+ 		        transition: background 0.3s,border 0.3s; ease;
  	}
 
  	.reveal .preview-link-overlay.loaded .viewport iframe {
