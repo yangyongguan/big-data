@@ -237,7 +237,8 @@ input[disabled]{
 [v-cloak]{
   display: none;
 }
-.xcImages .item:last-child{
+
+.xcImages .item:last-child.up-img{
   top:-0.09rem;
 }
 #app .mint-header,

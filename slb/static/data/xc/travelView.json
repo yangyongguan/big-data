@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "data": {
+    "xcName": "北京青岛论坛会议",
+    "xcPersonNum": 15,
+    "startCity": "北京",
+    "endCity": "青岛",
+    "startDate": "2017-5-8",
+    "endDate": "2017-5-11",
+    "detailData":[
+      { "dayIndex":1,
+        "transportation":"火车",
+        "Hotel":"青岛国际大酒店",
+        "place":"青岛国际大酒店会议大厅",
+        "description":"地球甘蓝搞囊康就得看噶开个甘蓝搞囊康就得看甘蓝搞囊康就得看价"
+      },
+      {"dayIndex":2,
+        "transportation":"飞机",
+        "Hotel":"青岛国际大酒店",
+        "place":"青岛国际大酒店会议大厅",
+        "description":"地球甘蓝搞囊康就得看噶开个甘蓝搞囊康就得看甘蓝搞囊康就得看价"
+      },
+      {"dayIndex":3,
+        "transportation":"轮船",
+        "Hotel":"青岛国际大酒店",
+        "place":"青岛国际大酒店会议大厅",
+        "description":"地球甘蓝搞囊康就得看噶开个甘蓝搞囊康就得看甘蓝搞囊康就得看价"
+      },
+      { "dayIndex":4,
+        "transportation":"地铁",
+        "Hotel":"青岛国际大酒店",
+        "place":"青岛国际大酒店会议大厅",
+        "description":"地球甘蓝搞囊康就得看噶开个甘蓝搞囊康就得看甘蓝搞囊康就得看价"
+      }
+    ],
+    "xcPhotos":[
+      "https://img6.bdstatic.com/img/image/smallpic/weijupaisheyanhua.jpg",
+      "https://img6.bdstatic.com/img/image/smallpic/mengchongxiaomaaoo.jpg",
+      "https://img6.bdstatic.com/img/image/smallpic/jignboranmingx.jpg",
+      "https://img6.bdstatic.com/img/image/smallpic/xiaoqingxinjuhua.jpg"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "itineraryName": "中泰公路建设考察",
+      "destinationNum": 5,
+      "startDate": "2017-5-12",
+      "endDate": "2017-5-18",
+      "Itinerary": [
+        {
+          "areaName": "北京",
+          "longitude": 119.23,
+          "latitude": 22.22
+        },
+        {
+          "areaName": "曼谷",
+          "longitude": 112.23,
+          "latitude": 32.22
+        }
+      ]
+    }
+  ]
+}
