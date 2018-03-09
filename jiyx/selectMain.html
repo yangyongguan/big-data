@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>专题分析_企业专题分析</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/selectMain.css">
+    <script>
+        var did = null;
+    </script>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <h1><a href="selectMain.html" class="logo"><i class="logicon"></i>经济运行分析大数据平台</a></h1>
+    <div class="userArea">
+        <a class="name" href='javascript:;'><i class="userName"></i>admin</a>
+        <span class="time">2016年8月12日</span>
+        <span class="week">星期四</span>
+        <span class="editPwd"><i class="edit"></i>修改密码</span>
+        <span class="singOut">安全退出</span>
+        <span class="help">帮助</span>
+    </div>
+</div>
+<div class="selectMain">
+    <div class="sitem s1" shref="./pandect.html">
+        <img src="../images/nav11.png">
+    </div>
+    <div class="sitem s2 active" shref="./kq.html" >
+        <img src="../images/nav22.png">
+    </div>
+    <div class="sitem s3" shref="./ita1.html">
+        <img src="../images/nav33.png">
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/common/inculde.js"></script>
+<script>
+    $('.sitem').on('click',function(){
+        window.location.href = $(this).attr('shref');
+    });
+    $('.selectMain').on('mouseover',function(){
+        $('.s2').removeClass('active');
+    });
+    $('.selectMain').on('mouseout',function(){
+        $('.s2').addClass('active');
+    });
+</script>
+</body>
+</html>

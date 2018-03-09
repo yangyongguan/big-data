@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>首页_经济运行分析大数据平台</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+    var did = 1;
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+    <h1><a href="selectMain.html" class="logo"><i class="logicon"></i>经济运行分析大数据平台</a></h1>
+    <div class="userArea">
+		<a class="name" href='javascript:;'><i class="userName"></i>admin</a>
+		<span class="time">2016年8月12日</span>
+		<span class="week">星期四</span>
+		<span class="editPwd"><i class="edit"></i>修改密码</span>
+		<span class="singOut">安全退出</span>
+		<span class="help">帮助</span>
+    </div>
+</div>
+
+
+    <!-- menu -->
+     <div class="menu">
+    <div class='inner'>
+    <dl>
+        <dt><i class="d1"></i>城市经济总览</dt>
+        <dd>
+            <a href="pandect.html">领导驾驶舱</a>
+        </dd>
+        <dd>
+            <a href="index.html">宏观经济监测</a>
+        </dd>
+        <dd>
+            <a href="ais.html">产业结构分析</a>
+        </dd>
+        <dd>
+            <a href="msa.html">市场主体分析</a>
+        </dd>
+        <dd>
+            <a href="icpd.html">重要商品价格监测</a>
+        </dd>
+    </dl>
+    <!--<dl>-->
+        <!--<dt class='d2'><i class="d2"></i>景气指数预警</dt>-->
+        <!--<dd>-->
+            <!--<a href="kq.html">克强指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="mai2.html">市场活跃指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cci.html">居民消费信心指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cpi.html">居民消费价格指数</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+        <!--<dt class="d3"><i class="d3"></i>专题分析</dt>-->
+        <!--<dd>-->
+            <!--<a href="ita3.html">行业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="etpa.html">企业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="eesa2.html">经济与环境专题分析</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    </div>
+</div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="macroEconomy cf">
+            <div class="cbox fl">
+                <h2 class="ctitle"><span class="name">经济发展态势预测</span></h2>
+                <div class="cbody">
+                    <div class="ctab" id="tab0">
+                        <a href="index.html" >市级经济</a>
+                        <a href="index1.html">省级经济</a>
+                        <a href="index2.html" class="active">全国总览</a>
+                    </div>
+                    <div class="cf">
+                        <div class="citem fl w6" id="topLeft">
+                            <div class="pie-map-div fl" style="width:100%;height:400px;">
+                                <div class="topTitle topTitle2 cf">
+                                    <h2 style="text-align: left;padding-left: 150px;">全国宏观经济指标</h2>
+                                    <div class="fr" style="margin-right: 20px;">
+                                        <!--<select class="select">-->
+                                            <!--<option>2016</option>-->
+                                            <!--<option>2015</option>-->
+                                            <!--<option>2014</option>-->
+                                        <!--</select>-->
+                                        <!--<span class="fl">年</span>-->
+                                        <select class="select">
+                                            <option>Q1</option>
+                                            <option>Q2</option>
+                                            <option>Q3</option>
+                                            <option>Q4</option>
+                                        </select>
+                                        <!--<span class="fl">季</span>-->
+                                    </div>
+                                </div>
+                                <div id="main" style="width:100%;height:330px;margin-top: -150px !important;"></div>
+                                <div id="btnLeft"></div>
+                                <div id="stop"></div>
+                                <div id="btnRight"></div>
+                                <div id="banner" class="banner">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="citem fr w4">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>经济状态</td>
+                                        <td id="cityId"></td>
+                                        <td id="cityAvgId">平均</td>
+                                        <td>同比增速</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbdId">
+                                    <script id="tabId" type="text/html">
+                                        {{each dataList as value i}}
+                                        <tr>
+                                            <td>{{value.title}}</td>
+                                            <td>{{value.total}}</td>
+                                            <td>{{value.avg}}</td>
+                                            {{if value.state == 0}}
+                                            <td class="arrowUp">
+                                                {{else}}
+                                            <td class="arrowDown">
+                                                {{/if}}
+                                                <span>{{value.range}}</span>
+                                            </td>
+                                        </tr>
+                                        {{/each}}
+                                    </script>
+                                    <!--<tr>-->
+                                        <!--<td>生产总值</td>-->
+                                        <!--<td>1477.5亿元</td>-->
+                                        <!--<td>1405亿元</td>-->
+                                        <!--<td class="arrowUp"><span>14.2%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>社会消费品零售额</td>-->
+                                        <!--<td>376亿元</td>-->
+                                        <!--<td>356亿元</td>-->
+                                        <!--<td class="arrowUp"><span>10.6%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>企业数量</td>-->
+                                        <!--<td>1027家</td>-->
+                                        <!--<td>986家</td>-->
+                                        <!--<td class="arrowUp"><span>13.7%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>居民收入</td>-->
+                                        <!--<td>73465元</td>-->
+                                        <!--<td>73234元</td>-->
+                                        <!--<td class="arrowUp"><span>17.8%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>固定资产投资</td>-->
+                                        <!--<td>387亿元</td>-->
+                                        <!--<td>402亿元</td>-->
+                                        <!--<td class="arrowUp"><span>5.9%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>财政支出</td>-->
+                                        <!--<td>81.5亿元</td>-->
+                                        <!--<td>79亿元</td>-->
+                                        <!--<td class="arrowUp"><span>7.6%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>财政收入</td>-->
+                                        <!--<td>67.93亿元</td>-->
+                                        <!--<td>65.7亿元</td>-->
+                                        <!--<td class="arrowDown"><span>6.1%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>进口额</td>-->
+                                        <!--<td>8.78亿美元</td>-->
+                                        <!--<td>7.96亿美元</td>-->
+                                        <!--<td class="arrowUp"><span>7.93%</span></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>出口额</td>-->
+                                        <!--<td>7.56亿美元</td>-->
+                                        <!--<td>7.74亿美元</td>-->
+                                        <!--<td class="arrowDown"><span>6.8%</span></td>-->
+                                    <!--</tr>-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cbox">
+                <div class="wHalf fl">
+                    <h2 class="ctitle"><span class="name">宏观经济走势</span></h2>
+                    <div class="cbody">
+                        <div class="ctab" id="tab1">
+                            <a href="javascript:;" class="active">居民消费</a>
+                            <a href="javascript:;">工业生产价格</a>
+                            <a href="javascript:;">财政收入</a>
+                            <a href="javascript:;">财政支出</a>
+                            <a href="javascript:;">固定资产投资</a>
+                        </div>
+                        <div class="cf">
+                            <div class="citem">
+                                <div id="box1" style="width: 100%;height: 350px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wHalf fr">
+                    <h2 class="ctitle"><span class="name">产业动态监测</span></h2>
+                    <div class="cbody">
+                        <div class="cf">
+                            <div class="citem">
+                                <div id="box2" style="width: 100%;height: 380px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox cf">
+            <div class="wHalf fl">
+                <h2 class="ctitle"><span class="name">异常指标检测</span></h2>
+                <div class="cbody">
+                    <div class="cf">
+                        <div class="citem"><table>
+                            <thead>
+                            <tr>
+                                <td>序号</td>
+                                <td>时间</td>
+                                <td>指标异动详情</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>05-23</td>
+                                <td>
+                                    <p> 汽车产量当期同比增速达到近4年历史最低值-0.3.8%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>05-18</td>
+                                <td><p>居民生活社会消费品零售额累计同比增速近4年历史同期最低8.3%-0.3.8%</p></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>05-12</td>
+                                <td><p>房地产开发投资额累计同比增速保持4个月连续下降</p></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>05-9</td>
+                                <td><p>海关进出口总值累计同比增速达到4年历史最低-2.5%</p></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>05-6</td>
+                                <td><p>采矿总纳税累计同比增速达到8年历史最低6.7%</p></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>05-3</td>
+                                <td><p>房地产开发投资额累计同比增速保持4个月连续下降</p></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>05-1</td>
+                                <td><p>汽车产量当期同比增速达到近4年历史最低值-0.3.8%</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wHalf fr">
+                <h2 class="ctitle"><span class="name">重要商品价格</span></h2>
+                <div class="cbody">
+                    <div class="cf">
+                        <div class="citem ">
+                            <iframe scrolling="no" frameborder="no"
+                                    border="0" src="./inculde/重要商品价格.html" style="height:315px;width:100%;border:none;overflow: hidden"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!---->
+    <script src="../js/echarts-all-3.js"></script>
+    <!--<script src="../js/echarts-engine.js"></script>-->
+    <script src="../js/arttemplate.js"></script><!--js模板-->
+    <script src='../js/common/inculde.js'></script>
+    <!---->
+    <!--<script src="../js/index/option.js"></script>-->
+    <!--<script src="../js/index/main.js"></script>-->
+    <!--<script src="../js/china-map.js"></script>-->
+    <!--<script src="../js/index/index1.js"></script>-->
+    <!--<script src="../js/index/index.js"></script>-->
+    <script src="../js/index/index-all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>首页_经济运行分析大数据平台</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <!--[if lte IE 8]>
+    <div id="lowie-main">
+        <img src="../images/login.jpg">
+    </div>
+    <![endif]-->
+    <div class="loginWrap">
+        <div class="left">
+            <h1>经济运行</h1>
+            <h2>分析大数据平台</h2>
+            <h3>economy operation</h3>
+        </div>
+        <div class="right">
+        <form id="myForm">
+            <i class="nameIcon"></i>
+            <i class="pwdIcon"></i>
+            <h2> 用户登陆</h2>
+            <input type="text" name="" class='userName'>
+            <input type="" name="" class="pwd">
+            <a href="javascript:void(0)" class='wj'>忘记密码？</a>
+            <div class="otherLogin">
+                <i class="otherIcon"></i>
+                <p>其他登陆方式</p>
+                <ul>
+                     <li><a href="javascript:void(0)">QQ</a></li>
+                     <li><a href="javascript:void(0)" class="a1">微信</a></li>
+                     <li><a href="javascript:void(0)" class="a2">微博</a></li>
+                 </ul> 
+            </div> 
+            <input type="button" name="" class="submit" value="登陆">
+        </form>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+    $('.submit').on('click',function(){
+        var name = $('.userName').val();
+        var pwd = $('.pwd').val();
+        var userName='root',password='root';
+        if(userName==''){
+            alert('用户名不能为空！');
+            return;
+        }else if(pwd==''){
+            alert('密码不能为空！');
+            return;
+        }else if(name!=userName||pwd!=password){
+            alert('用户名或密码错误！');
+            return;
+        }
+        window.location.href = './selectMain.html';
+    });
+</script>
+
+</html>

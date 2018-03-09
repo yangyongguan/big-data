@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>专题分析_企业专题分析</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <!--<link rel="stylesheet" href="../css/yyg.css">-->
+    <link rel="stylesheet" href="../css/firstPage.css">
+    <script>var did=0;</script>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <h1><a href="selectMain.html" class="logo"><i class="logicon"></i>经济运行分析大数据平台</a></h1>
+    <div class="userArea">
+        <a class="name" href='javascript:;'><i class="userName"></i>admin</a>
+        <span class="time">2016年8月12日</span>
+        <span class="week">星期四</span>
+        <span class="editPwd"><i class="edit"></i>修改密码</span>
+        <span class="singOut">安全退出</span>
+        <span class="help">帮助</span>
+    </div>
+</div>
+<!-- menu -->
+<div class="menu">
+    <div class='inner'>
+        <dl>
+            <dt><i class="d1"></i>城市经济总览</dt>
+            <dd>
+                <a href="pandect.html">领导驾驶舱</a>
+            </dd>
+            <dd>
+                <a href="index.html">宏观经济监测</a>
+            </dd>
+            <dd>
+                <a href="ais.html">产业结构分析</a>
+            </dd>
+            <dd>
+                <a href="msa.html">市场主体分析</a>
+            </dd>
+            <dd>
+                <a href="icpd.html">重要商品价格监测</a>
+            </dd>
+        </dl>
+        <!--<dl>-->
+            <!--<dt class='d2'><i class="d2"></i>景气指数预警</dt>-->
+            <!--<dd>-->
+                <!--<a href="kq.html">克强指数</a>-->
+            <!--</dd>-->
+            <!--<dd>-->
+                <!--<a href="mai2.html">市场活跃指数</a>-->
+            <!--</dd>-->
+            <!--<dd>-->
+                <!--<a href="cci.html">居民消费信心指数</a>-->
+            <!--</dd>-->
+            <!--<dd>-->
+                <!--<a href="cpi.html">居民消费价格指数</a>-->
+            <!--</dd>-->
+        <!--</dl>-->
+        <!--<dl>-->
+            <!--<dt class="d3"><i class="d3"></i>专题分析</dt>-->
+            <!--<dd>-->
+                <!--<a href="ita3.html">行业专题分析</a>-->
+            <!--</dd>-->
+            <!--<dd>-->
+                <!--<a href="etpa.html">企业专题分析</a>-->
+            <!--</dd>-->
+            <!--<dd>-->
+                <!--<a href="eesa2.html">经济与环境专题分析</a>-->
+            <!--</dd>-->
+        <!--</dl>-->
+    </div>
+</div>
+
+<!-- content -->
+<div class="content">
+    <div class="macroEconomy cf">
+        <div class="cbox fl">
+            <h2 class="ctitle">
+                <span class="name">领导驾驶舱</span>
+            </h2>
+            <div class="cf pMain">
+                <div class="fl fs_left_main">
+                    <div class="fs_left_one fl fs_border">
+                        <!--<div class="fa_center">-->
+                            <div class="item01 fs_border">
+                                <p class="fs_p01">GDP增速：<strong class="fs_f_z_c">8.2</strong>%</p>
+                                <p class="fs_p02">青岛市</p>
+                                <p class="fs_p03">去年同期：7.9%，上升0.3% <i class="arrow-up"></i></p>
+                            </div>
+                            <div class="item02 fs_border">
+                                <p class="fs_p01">省内排名：第<strong class="fs_f_z_c">1</strong>名</p>
+                                <p class="fs_p02">青岛市</p>
+                                <p class="fs_p03">去年同期：第一名，  持平 <i class="arrow-hr"></i></p>
+                            </div>
+                            <div class="item03 fs_border">
+                                <p class="fs_p01">全国排名：第<strong class="fs_f_z_c">12</strong>名</p>
+                                <p class="fs_p02">青岛市</p>
+                                <p class="fs_p03">去年同期：第14名， 下降2位
+                                    <i class="arrow-down"></i>
+                                </p>
+                            </div>
+                        <!--</div>-->
+                    </div>
+                    <div class="fs_left_two fl fs_border">
+                        <div class="item fl fs_r_b" >
+                            <h2>GDP增速</h2>
+                            <div id="gdpChart" style="height: 100%"></div>
+                        </div>
+                        <div class="item fl fs_r_b" >
+                            <h2>国民经济主体占比</h2>
+                            <div id="pieChart" style="height: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl fs_right_main">
+                    <div class="fs_border">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>十大支柱产业</td>
+                                <td >总产值<i class="fs_f_z">（亿元）</i></td>
+                                <td>风险预警</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>机械装备</td>
+                                    <td>1257.2亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="fs_f_b">家电</td>
+                                    <td>776.8亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>石化</td>
+                                    <td>716.5亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>服装</td>
+                                    <td>655.8亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>食品</td>
+                                    <td>596.2亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>橡胶</td>
+                                    <td>567.8亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>汽车</td>
+                                    <td>456.7亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>轨道交通装备</td>
+                                    <td>386.4亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>船舶海工</td>
+                                    <td>386.4亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                                <tr>
+                                    <td>电子信息</td>
+                                    <td>386.4亿元</td>
+                                    <td><a href="javascript:;">正常</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--<div class="fs_border fs_r_b">-->
+                        <!--<h2>经典舆情信息-->
+                            <!--<a href="javascript:;">更多></a>-->
+                        <!--</h2>-->
+                        <!--<ul>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg01"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg02"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg03"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg04"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg04"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg04"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg04"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div>-->
+                                    <!--<span class="cyc fl fs_bg04"></span>-->
+                                    <!--<span class="con fl">莱西布局“五位一体” 打造休闲产业新增长极</span>-->
+                                <!--</div>-->
+                                <!--<span class="time">2016-09-02</span>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="cf fs_bt_box cf pMain" >
+                <div class="fl item01 fs_border fs_r_b">
+                    <h2>行业综合分析</h2>
+                    <div id="scatterChart" style="height: 85%;"></div>
+                </div>
+                <div class="fr item02 fs_border fs_r_b">
+                    <h2>异动指标预警
+                        <!--<a href="javascript:;">更多></a>-->
+                        <i class="fs_more"></i>
+                    </h2>
+                    <div class="con1">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li><li>
+                            <div>
+                                <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                            </div>
+                            <span class="ttime fr">2016-09-02</span>
+                        </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="con2" style="display: none;">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li><li>
+                            <div>
+                                <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                            </div>
+                            <span class="ttime fr">2016-09-02</span>
+                        </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="cyc fl fs_bg01"></span>
+                                <span class="con fl">海关进出口总值累计同比增速达到4年历史最低
+                                    <strong>-2.5%</strong>
+                                </span>
+                                </div>
+                                <span class="ttime fr">2016-09-02</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/echarts-all-3.js"></script>
+<script src='../js/common/inculde.js'></script>
+<!--<script src='../js/echarts-engine.js'></script>-->
+<script src="../js/arttemplate.js"></script><!--js模板-->
+<script src="../js/first/firstPage.js"></script>
+</body>
+</html>

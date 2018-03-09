@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>首页_经济运行分析大数据平台</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/ais.css">
+    <script>
+    var did = 2;
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+    <h1><a href="selectMain.html" class="logo"><i class="logicon"></i>经济运行分析大数据平台</a></h1>
+    <div class="userArea">
+		<a class="name" href='javascript:;'><i class="userName"></i>admin</a>
+		<span class="time">2016年8月12日</span>
+		<span class="week">星期四</span>
+		<span class="editPwd"><i class="edit"></i>修改密码</span>
+		<span class="singOut">安全退出</span>
+		<span class="help">帮助</span>
+    </div>
+</div>
+
+
+    <!-- menu -->
+     <div class="menu">
+    <div class='inner'>
+    <dl>
+        <dt><i class="d1"></i>城市经济总览</dt>
+        <dd>
+            <a href="pandect.html">领导驾驶舱</a>
+        </dd>
+        <dd>
+            <a href="index.html">宏观经济监测</a>
+        </dd>
+        <dd>
+            <a href="ais.html">产业结构分析</a>
+        </dd>
+        <dd>
+            <a href="msa.html">市场主体分析</a>
+        </dd>
+        <dd>
+            <a href="icpd.html">重要商品价格监测</a>
+        </dd>
+    </dl>
+    <!--<dl>-->
+        <!--<dt class='d2'><i class="d2"></i>景气指数预警</dt>-->
+        <!--<dd>-->
+            <!--<a href="kq.html">克强指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="mai2.html">市场活跃指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cci.html">居民消费信心指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cpi.html">居民消费价格指数</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+        <!--<dt class="d3"><i class="d3"></i>专题分析</dt>-->
+        <!--<dd>-->
+            <!--<a href="ita3.html">行业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="etpa.html">企业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="eesa2.html">经济与环境专题分析</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    </div>
+</div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="cf">
+            <div class="cbox fl">
+                <!-- <h2 class="ctitle"><span class="name">经济发展态势预测</span></h2> -->
+                <div class="cbody">
+                        <div class="ctab ctab_w">
+                            <a href="ais.html">产业结构综合分析</a>
+                            <a href="ais2.html">产业聚集度分析</a>
+                            <a href="ais3.html" class="active">重点行业分析</a>
+                        </div>
+                    <div class="cf">
+                        <div class="citem">
+                            <div class="search cf">
+                                <span class='title fl'>产业</span>
+                                <select class="select">
+                                    <option value="0">第一产业</option>
+                                    <option value="1" selected>第二产业</option>
+                                    <option value="2">第三产业</option>
+                                </select>
+                                <span class='title fl'>细分行业</span>
+                                <select id="select01" class="select">
+                                    <option value="0">制造业</option>
+                                    <option value="1">工业</option>
+                                    <option value="2">建筑业</option>
+                                    <option value="3">采矿业</option>
+                                    <option value="4">钢铁行业</option>
+                                    <option value="5">交通运输业</option>
+                                    <option value="6">房地产业</option>
+                                    <option value="7">金融</option>
+                                    <option value="8" selected>家电行业</option>
+                                </select>
+                                <!--<a href="javascript:;:;" class="searchBtn fl">查找</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cbox fl cbox_color">
+                <div class="cbody">
+                    <div class="ctab ctab_w">
+                        <a href="ais3.html" class="active">市场规模</a>
+                        <a href="ais3-2.html">经营情况</a>
+                        <a href="ais3-3.html" >消费者状况</a>
+                    </div>
+                    <div class="cf aisbox">
+                        <div class="citem wHalf fl">
+                            <div>
+                                <h2>企业数量变化</h2>
+                                <!-- <select class="select">
+                                    <option>企业新增数</option>
+                                </select> -->
+                            </div>
+                            <div class="cf">
+                                <div id="left1" style="width:100%;height:385px;"></div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>时间</td>
+                                            <td>企业总数</td>
+                                            <td>企业新增数</td>
+                                            <td>企业退出数</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2013年</td>
+                                            <td class="arrowUp"><span>2021家</span></td>
+                                            <td class="arrowUp"><span>105家</span></td>
+                                            <td>121家</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2014年</td>
+                                            <td class="arrowUp"><span>2138家</span></td>
+                                            <td class="arrowUp"><span>151家</span></td>
+                                            <td>203家</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015年</td>
+                                            <td class="arrowUp"><span>3895家</span></td>
+                                            <td class="arrowUp"><span>195家</span></td>
+                                            <td>245家</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016年</td>
+                                            <td class="arrowDown"><span>4520家</span></td>
+                                            <td class="arrowUp"><span>215家</span></td>
+                                            <td class="arrowDown"><span>185家</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ibox">
+                                <div id="left2" style="width:100%;height:380px;margin-bottom: 30px;"></div>
+                            </div>
+                        </div>
+                        <div class="citem wHalf fr">
+                            <div>
+                                <h2>产业用电水油煤数量变化</h2>
+                                <div class="cf">
+                                    <select id="select02" class="select">
+                                        <option value="0">产业用电量</option>
+                                        <option value="1">产业用水量</option>
+                                        <option value="2">产业用油量</option>
+                                        <option value="3">产业用煤量</option>
+                                    </select>
+                                </div>
+                                <div class="cf">
+                                    <div id="right1" style="width:100%;height:350px;margin-bottom: -18px;"></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>时间</td>
+                                                <td>产业用电量</td>
+                                                <td>产业用水量</td>
+                                                <td>产业用煤量</td>
+                                                <td>产业用油量</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2013年</td>
+                                                <td>156千瓦</td>
+                                                <td>83万吨</td>
+                                                <td>245万吨</td>
+                                                <td>65万吨</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2014年</td>
+                                                <td>196千瓦</td>
+                                                <td>90 万吨</td>
+                                                <td>297万吨</td>
+                                                <td>76万吨</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015年</td>
+                                                <td>265千瓦</td>
+                                                <td>98万吨</td>
+                                                <td>315万吨</td>
+                                                <td>98万吨</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016年</td>
+                                                <td>302千瓦</td>
+                                                <td>105万吨</td>
+                                                <td>350万吨</td>
+                                                <td>105万吨</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="ibox">
+                                    <div id="right2" style="width:100%;height:380px;margin-bottom: 30px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cf aisbox">
+                        <div class="citem wHalf fl">
+                            <div class="cf">
+                                <!--<div class="cf">-->
+                                    <!--<select class="select">-->
+                                        <!--<option>进口额</option>-->
+                                        <!--<option>出口额</option>-->
+                                    <!--</select>-->
+                                <!--</div>-->
+                                <div id="left3" style="width:100%;height:380px;margin-bottom: 20px;"></div>
+                            </div>
+                            <div class="ibox">
+                                <div id="left4" style="width:100%;height:250px;margin-bottom: 30px;"></div>
+                            </div>
+                        </div>
+                        <div class="citem wHalf fr">
+                            <div>
+                                <div class="cf">
+                                    <!--<div class="cf">-->
+                                        <!--<select class="select">-->
+                                            <!--<option>企业规模</option>-->
+                                            <!--<option>企业资本性质</option>-->
+                                            <!--<option>企业推出数</option>-->
+                                        <!--</select>-->
+                                    <!--</div>-->
+                                    <div id="right3" style="width:100%;height:380px;margin-bottom: 20px;"></div>
+                                </div>
+                                <div class="ibox">
+                                    <table style="margin-top: 37px;">
+                                        <thead>
+                                            <tr>
+                                                <td>行业</td>
+                                                <td>国企</td>
+                                                <td>私企</td>
+                                                <td>外企</td>
+                                                <td>合资企业</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>白电</td>
+                                                <td>151亿</td>
+                                                <td>98亿</td>
+                                                <td>46亿</td>
+                                                <td>165亿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>黑电</td>
+                                                <td>201亿</td>
+                                                <td>145亿</td>
+                                                <td>56亿</td>
+                                                <td>187亿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>数码家电</td>
+                                                <td>287亿</td>
+                                                <td>231亿</td>
+                                                <td>87亿</td>
+                                                <td>195亿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>其他</td>
+                                                <td>189亿</td>
+                                                <td>125亿</td>
+                                                <td>25亿</td>
+                                                <td>198亿</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+    <script src="../js/echarts-all-3.js"></script>
+    <script src='../js/common/inculde.js'></script>
+
+    <script src="../js/ais/option.js"></script>
+    <script src="../js/ais/ais3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit">
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <title>首页_经济运行分析大数据平台</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/msa.css">
+    <script>
+    var did = 3;
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+    <h1><a href="selectMain.html" class="logo"><i class="logicon"></i>经济运行分析大数据平台</a></h1>
+    <div class="userArea">
+		<a class="name" href='javascript:;'><i class="userName"></i>admin</a>
+		<span class="time">2016年8月12日</span>
+		<span class="week">星期四</span>
+		<span class="editPwd"><i class="edit"></i>修改密码</span>
+		<span class="singOut">安全退出</span>
+		<span class="help">帮助</span>
+    </div>
+</div>
+
+
+    <!-- menu -->
+     <div class="menu">
+    <div class='inner'>
+    <dl>
+        <dt><i class="d1"></i>城市经济总览</dt>
+        <dd>
+            <a href="pandect.html">领导驾驶舱</a>
+        </dd>
+        <dd>
+            <a href="index.html">宏观经济监测</a>
+        </dd>
+        <dd>
+            <a href="ais.html">产业结构分析</a>
+        </dd>
+        <dd>
+            <a href="msa.html">市场主体分析</a>
+        </dd>
+        <dd>
+            <a href="icpd.html">重要商品价格监测</a>
+        </dd>
+    </dl>
+    <!--<dl>-->
+        <!--<dt class='d2'><i class="d2"></i>景气指数预警</dt>-->
+        <!--<dd>-->
+            <!--<a href="kq.html">克强指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="mai2.html">市场活跃指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cci.html">居民消费信心指数</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="cpi.html">居民消费价格指数</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    <!--<dl>-->
+        <!--<dt class="d3"><i class="d3"></i>专题分析</dt>-->
+        <!--<dd>-->
+            <!--<a href="ita3.html">行业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="etpa.html">企业专题分析</a>-->
+        <!--</dd>-->
+        <!--<dd>-->
+            <!--<a href="eesa2.html">经济与环境专题分析</a>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    </div>
+</div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="msaWrap cf">
+            <div class="cbox fl">
+                <div class="ctab ctab_b">
+                    <a href="msa.html">企业综合分析</a>
+                    <a href="msa2.html" class="active">企业创新能力</a>
+                    <a href="msa3.html">企业诚信情况</a>
+                    <a href="msa4.html">企业融资情况</a>
+                </div>
+            </div>
+            <div class="cbox fl">
+                <h2 class="ctitle"><span class="name">企业专利竞争力分析</span></h2>
+                <div class="cbody">
+                    <div class="cf">
+                        <div class="citem">
+                            <div class="cleft half">
+                                <h2>区域企业专利成长性分析</h2>
+                                <div id="box1" style="height: 400px;width: 100%;"></div>
+                            </div>
+                            <div class="cright half">
+                                <h2>区域企业专利种类分布</h2>
+                                <div id="box2" style="height: 400px;width: 100%;"></div>
+                            </div>
+                        </div>
+                        <h2 class="ctitle"><span class="name">企业著作权竞争力分析</span></h2>
+                        <div class="citem">
+                            <div class="cleft half">
+                                <h2>区域企业著作权成长性分析</h2>
+                                        <div id="box3" style="height: 400px;width: 100%;"></div>
+                                </div>
+                            <div class="cright half">
+                                <h2>区域著作权取得方式分布</h2>
+                                <div id="box4" style="height: 400px;width: 100%;"></div>
+                            </div>
+                        </div>
+                        <h2 class="ctitle"><span class="name">企业商标竞争力分析</span></h2>
+                        <div class="citem">
+                            <div class="cleft half">
+                                <h2>区域企业商标成长性分析</h2>
+                                <div id="box5" style="height: 400px;width: 100%;"></div>
+                            </div>
+                            <div class="cright half">
+                                <h2>注册商标类型</h2>
+                                <div id="box6" style="height: 400px;width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+
+
+    <script src="../js/echarts-all-3.js"></script>
+    <script src="../js/echarts-engine.js"></script>
+    <script src='../js/common/inculde.js'></script>
+
+    <script type="text/javascript">
+    $(function() {
+        var _charts = charts.init({
+            id: 260,
+            container: "box1"
+        });
+        var _charts2 = charts.init({
+            id: 299,
+            container: "box2"
+        });
+        var _charts3 = charts.init({
+            id: 300,
+            container: "box3"
+        });
+        var _charts5 = charts.init({
+            id: 302,
+            container: "box5"
+        });
+        var _charts4 = charts.init({
+            id: 303,
+            container: "box4"
+        });
+        var _charts6 = charts.init({
+            id: 304,
+            container: "box6"
+        });
+    })
+    </script>
+</body>
+
+</html>
