@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="minWidth">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+    <!--[if lte IE 8]>
+	<link href="../css/ie8.css" rel="stylesheet" type="text/css"/>
+	<![endif]-->
+    <title>总览</title>
+    <style>
+    </style>
+</head>
+<body class="minWidth"><header>
+    <div class="header">
+        <div class="inner">
+            <h1 class="logo fl">
+				<a href="index.html" class="fl">
+                    <i class="logoIcon"></i>
+                    <span class="txt fl">民意云平台</span>
+				</a>
+			</h1>
+            <div class="userArea fr">
+                <a class="name" href='javascript:;'><i class="userNameIcon"></i>admin</a>
+                <span class="time">2016年8月12日</span>
+                <span class="hour">12:00</span>
+                <span class="appLoad">
+                    <a href="./appLoad.html">app下载</a>
+                </span>
+                <span class="shareExchange">
+                	<i class="shareExchangeIcon"></i>
+                    <a href="./shareExchange.html">共享交换平台</a>
+                </span>
+                <span class="setting">
+                    <i class="settingIcon"></i>
+                    <a href="./setting.html">个人设置</a>
+                </span>
+                <span class="singOut">
+                    <i class="singOutIcon"></i>
+                    <a href="./login.html">退出</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="mainWrap">
+     	<div id="leftBar" class="leftBar">
+    <ul>
+        <li>
+            <a val="0" href="./index.html" class="active">
+                <span class="icon icon1"></span>
+                <span class="txt">首页</span>
+            </a>
+        </li>
+        <li>
+            <a val="1" href="javascript:void(0)">
+                <span class="icon icon2"></span>
+                <span class="txt">市长热线</span>
+            </a>
+        </li>
+        <li>
+            <a val="2" href="javascript:void(0)">
+                <span class="icon icon3"></span>
+                <span class="txt">公安</span>
+            </a>
+        </li>
+        <li>
+            <a val="3" href="javascript:void(0)">
+                <span class="icon icon4"></span>
+                <span class="txt">信访</span>
+            </a>
+        </li>
+        <li>
+            <a val="4" href="javascript:void(0)">
+                <span class="icon icon5"></span>
+                <span class="txt">网络舆情</span>
+            </a>
+        </li>
+        <li>
+            <a val="5" href="javascript:void(0)">
+                <span class="icon icon6"></span>
+                <span class="txt">政企平台</span>
+            </a>
+        </li>
+        <li>
+            <a val="6" href="javascript:void(0)">
+                <span class="icon icon7"></span>
+                <span class="txt">督查</span>
+            </a>
+        </li>
+        <li class='lastLi'>
+            <a val="7" href="javascript:void(0)">
+                <span class="icon icon8"></span>
+                <span class="txt">城市管理</span>
+            </a>
+        </li>
+    </ul>
+</div>
+        <div class="mainBody">
+            <div class="y_border dx_top">
+                <ul class="y_menu">
+                    <li class="active" href="./index.html">民意总览</li>
+                    <li href="./pHotAys.html">民意热点分析</li>
+                    <li href="./typeAnalysis.html">民意类型分布</li>
+                    <li href="./pAreaScatter.html">民意区域分布</li>
+                    <li href="./pCirqueAys.html">民意环比分析</li>
+                    <li href="./opinionSearch.html">民意查询</li>
+                </ul>
+            </div>
+            <div class="export cf">
+            	<div class="fl cf">
+            		<span class="fl today_con">今日投诉举报情况</span>
+            		<div href="./conditionDetail.html" class="fr btn showBtn">
+            		</div>
+            	</div>
+                <div id="exportModalId" class="fr" style="position: absolute;right: -10000px;">
+                    <div class="exportModal">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="selectAll" class="chk_1"/>本页全部
+								<label for="selectAll"></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk_1" id="n0"/>民意类型分析
+                                <label for="n"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div id="exportModalId2" class="fr" style="position: absolute;right: -1000px;">
+                    <div class="exportModal">
+                    	<div class="rootBox cf">
+                    		<input type="text" class="fl txtRoot" placeholder="/user/desktop"/>
+							<a id="moreRoot" class="fl moreRoot" href="">. . .</a>
+                    	</div>
+                    </div>
+                </div>-->
+                <button class="button button-primary" id="exportId">导出</button>
+            </div>
+            <div class="y_border dx_body" style="overflow: hidden;">
+                <div class="title">
+                    <p>民意数据图谱</p>
+                </div>
+                <div id="box1" style="overflow: hidden;position: relative;width:100%;height: 800px;margin: 0 auto;">
+	                <div class="modal">
+	                    <i class="loading0"></i>
+	                </div>
+                </div>
+            </div>
+            <div class="y_border dx_body">
+                <div class="title">
+                    <p>民意区域分布分析</p>
+                    <div class="fr date_box">
+                        <span>时间</span>
+                        <input class="start_date" id="start_date01" /> -
+                        <input class="end_date" id="end_date01" />
+                        <button class="button button-primary search">查询</button>
+                    </div>
+                </div>
+                <div href="./pTypeAys2.html" id="box2" style="height: 730px;"></div>
+            </div>
+            <div class="y_border dx_body">
+                <div class="title">
+                    <p>民意派发分析</p>
+                    <div class="fr date_box">
+                        <span>时间</span>
+                        <input class="start_date" id="start_date04" /> -
+                        <input class="end_date" id="end_date04" />
+                        <button class="button button-primary search">查询</button>
+                    </div>
+                </div>
+                <div class="right_top">
+                    <span class="button button-primary" id="barSpanId">
+                       	 民意指向部门Top10
+                        <i class="arrw"></i>
+                    </span>
+                    <div href="./pTypeAys.html" id="barId" class="y_border"></div>
+                </div>
+                <div id="box3" style="height: 730px;"></div>
+                <ul class="cf buttonList">
+                	<li class="active">
+                		<i></i>
+                		<span>市长热线12345</span>
+                	</li>
+                	<li>
+                		<i></i>
+                		<span>公安局</span>
+                	</li>
+                	<li>
+                		<i></i>
+                		<span>信访局</span>
+                	</li>
+                	<li>
+                		<i></i>
+                		<span>督查室</span>
+                	</li>
+                	<li>
+                		<i></i>
+                		<span>城管局</span>
+                	</li>
+                </ul>
+            </div>
+            <div style="background: #f0f4fc; height:616px;min-width: 1000px;" class="cf">
+                <div class="y_border dx_body" style="width: 49%;box-sizing: border-box; border-radius:4px; height:600px;float: left;background: #fff;">
+                    <iframe scrolling="no" src="./总览-民意类型分析.html" style="height:520px;width:100%; border:none;overflow: hidden"
+                            frameborder="no"
+                            border="0"></iframe>
+                </div>
+                <div class="y_border dx_body" style="width: 50%; box-sizing: border-box;border-radius:4px; height:600px;float: right;background: #fff;">
+                    <div class="title">
+                        <p>民意来源分析</p>
+                        <div class="fr date_box">
+                            <span>时间</span>
+                            <input class="start_date" id="start_date02" /> -
+                            <input class="end_date" id="end_date02" />
+                            <button class="button button-primary search">查询</button>
+                        </div>
+                    </div>
+                    <div href="./pSource.html" id="box5" style="height:520px; margin-bottom:20px;"></div>
+                </div>
+            </div>
+            <div class="y_border dx_body">
+                <div class="title">
+                    <p>民意数量变化趋势分析</p>
+                    <div class="fr date_box">
+                        <span>时间</span>
+                        <input class="start_date" id="start_date03" /> -
+                        <input class="end_date" id="end_date03" />
+                        <button class="button button-primary search">查询</button>
+                    </div>
+                </div>
+                <p class="p_select">所属区域：
+                    <select>
+                        <option>济宁市全部区域</option>
+                        <option>任城区</option>
+				        <option>兖州区</option>
+				        <option>邹城区</option>
+				        <option>金乡县</option>
+				        <option>嘉祥县</option>
+				        <option>鱼台县</option>
+				        <option>微山县</option>
+				        <option>泗水县</option>
+				        <option>汶上县</option>
+				        <option>梁山县</option>
+                    </select>
+                </p>
+                <div href="./pSourcePercent.html" id="box6" style="height: 380px;width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+	<div class="footerArea">
+		<div class="good_link">
+			<span class="b_none">领导驾驶舱</span>
+			<span>公安局</span>
+			<span>市长电话12345</span>
+			<span>信访局</span>
+			<span>市长邮箱</span>
+			<span>政务微信</span>
+			<span>政务微博</span>
+			<span>应急舆情</span>
+		</div>
+        <p> 济宁市公安局,版权所有&nbsp&nbsp未经协议授权,禁止转载&nbsp&nbsp技术支持 : 九次方大数据提供技术支持&nbsp&nbsp鲁公网安备 37089702000001&nbsp&nbsp鲁ICP备05024185号</p>
+        <div class="f_bottom">
+			<span>不良信息举报中心</span>
+			<span>网络安全报警网站</span>
+			<span>经营网站备案信息</span>
+		</div>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript" src='../js/lib.js'></script>
+<script type="text/javascript" src='../js/common.js'></script>
+<script type="text/javascript" src='../js/map/three.min.js'></script>
+<script type="text/javascript" src='../js/map/Jining3dMapLib.min.js'></script>
+<script type="text/javascript" src='../js/polarBranch/d3.min.js'></script>
+<script type="text/javascript" src='../js/polarBranch/PolarBranchChart.min.js'></script>
+<script type="text/javascript" src='../js/index.js'></script>
+</html>
