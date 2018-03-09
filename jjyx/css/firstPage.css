@@ -1,0 +1,82 @@
+/*企业专题分析*/
+.fs_left_main{width: 69%;box-sizing: border-box;}
+.fs_right_main{margin-left: 1%;width: 30%;min-width: 260px;box-sizing: border-box;}
+.fs_right_main table{width:100%;}
+.fs_right_main table tr{line-height:40px;}
+.fs_right_main table thead tr{background:#d40a02;}
+.fs_right_main tbody tr:nth-child(even){background:#F4F4F4;}
+.fs_right_main table td{text-indent:12px;}
+.fs_right_main tbody td{color:#000}
+.fs_right_main table td a{color: #10af22;padding-left: 10px;}
+.fs_border{border:1px solid #c4c4c4;background:#fff;}
+.fs_left_one{width: 99.5%;padding-top: 20px;padding-bottom: 20px;min-width: 740px;}
+.fs_left_two{width: 99.5%;margin-top: 20px;background: #fff;}
+.fs_left_three{width: 98.7%;}
+.fs_left_three{height: 442px;}
+/*.fa_center{margin: 0 auto;width:883px;}*/
+.fs_left_one .item01,.fs_left_one .item02,.fs_left_one .item03{
+    padding: 15px 15px 10px 15px;float: left;
+    color: #000;box-sizing: border-box;width: 32%;
+    margin-left: 1%;background: #fafafa;
+}
+.pMain{min-width: 1072px;}
+.cm{margin: 0 0 0 0 !important;}
+.fs_p01{font-size: 18px;line-height:20px;}
+.fs_p02{font-size: 20px;margin-top: 15px;}
+.fs_p03{font-size: 14px;margin-top: 5px;}
+/*.fs_p02 .arrowUp{background: url("../images/arrow_blue.png");display: inline-block;width: 9px;height: 21px;}*/
+/*.fs_p02 .arrowR{background: url("../images/arrow_red.png");vertical-align: 5px;display: inline-block;width: 21px;height: 9px;}*/
+/*.fs_p02 .arrowA{background: url("../images/arrow_yellow.png");display: inline-block;width: 9px;height: 21px;}*/
+.arrow-up{display: inline-block;width:0;  height:0;  border-left:8px solid transparent; border-right:8px solid transparent;border-bottom:12px solid #10af22;}
+.arrow-down{display: inline-block;width:0;  height:0;  border-left:8px solid transparent; border-right:8px solid transparent;border-top:12px solid #d40a02;}
+.arrow-hr{display: inline-block;width:20px;height:5px;background:#ff9600;vertical-align: 3px; }
+/*.item01,.item02,.item03{*/
+/*color: #000;*/
+/*}*/
+/*.item01 .fs_p01{background: #38b5ef;}*/
+/*.item01 .fs_p02{color: #38b5ef;}*/
+/*.item01 .fs_p03{color: #006da6;}*/
+/*.item02 .fs_p01{background: #e84942;}*/
+/*.item02 .fs_p02{color: #e84942;}*/
+/*.item02 .fs_p03{color: #666666;}*/
+/*.item02 .fs_p03 strong{color: #e84942;}*/
+/*.item03 .fs_p01{background: #ffb033;}*/
+/*.item03 .fs_p02{color: #ffb033;}*/
+/*.item03 .fs_p03{color: #666666;}*/
+.item03 .fs_p03 strong{color: #ffb033;}
+.fs_left_two .item{width: 48%;height: 255px;margin-left: 0.5%;position: relative;}
+.fs_r_b,.fs_l_b{padding-left:10px;}
+.fs_r_b h2,.fs_l_b h2{color: #000;font-size: 16px;height: 20px;line-height: 20px;margin: 10px 0 20px 0;}
+.fs_r_b h2:before,.fs_l_b h2:before{display: inline-block;content: '';width: 5px;background: red;height: 20px;line-height: 20px;position: relative;top:4px;margin-right: 5px;}
+.fs_r_b h2 a{float: right;margin-right: 20px;font-size: 14px;line-height: 26px;color: #888;}
+.fs_r_b ul li{color: #000;padding: 5px 20px 5px 0;float: left;width: 98%;margin-left: 10px;}
+.fs_r_b ul li .cyc{display: inline-block;width: 5px;height:5px;border-radius: 2.5px;margin-top: 7px;}
+.fs_r_b ul li .con{display: inline-block;margin-left: 10px;}
+.fs_r_b ul li .con strong{color:#ff3c3c; }
+.fs_bg01{background: #888;}
+.fs_bg02{background: #ffa340;}
+.fs_bg03{background: #ffd201;}
+.fs_bg04{background: #c9c9c9;}
+.fs_f_b{color: #00a2ff !important;text-decoration: underline;cursor: pointer;}
+.fs_f_z{font-size: 12px !important;}
+.fs_f_z_c{font-size: 30px;color: #d40a02;}
+.fs_r_b ul li .ttime{display: block;color: #888;margin-right: 15px;}
+.fs_left_three .item01{width: 40%;height: 390px;}
+.fs_left_three .item02{width: 59%;height: 390px;margin-left:1%;}
+.fs_t{display: block;position: absolute;color: #000;font-size: 16px;width: 100%;text-align: center;bottom: 10px;}
+.fs_bt_box{width: 100%;margin-top: 20px;}
+.fs_bt_box .item01{width: 54%;box-sizing: border-box;height: 400px}
+.fs_bt_box .item02{position: relative;width: 44.6%;margin-left: 1%;box-sizing: border-box;height: 400px}
+.fs_more{display: inline-block;width: 16px;height: 16px;background: url("../images/more.png");}
+.fs_bt_box .item02 .fs_more{vertical-align: -3px;float: right;margin-right: 20px;cursor: pointer;}
+.con1,.con2{
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;	/* Firefox 4 */
+    -webkit-transition: opacity 1s;	/* Safari 和 Chrome */
+    -o-transition: opacity 1s;}
+.con2{opacity: 0;}

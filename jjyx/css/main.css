@@ -1,0 +1,113 @@
+/* 首页 */
+.food-list{ overflow:hidden;}
+.food-list-col{float:left;width:50%;}
+.food-list-col h4{height:18px; margin:10px 0 0 15px;padding-left:10px;border-left:2px solid #EF930F; font-size:16px; color:#EF930F; line-height:18px;}
+/* 信用查询 */
+.qyfxpg{height:470px; margin-bottom:20px; background:#0D224D; overflow:hidden;}
+.qyfxpg .chart-pg{float:left;width:50%;}
+
+/* 投诉举报 */
+.cptsjb{ padding:25px;}
+.cptsjb-l{margin-right:330px;height:600px;}
+.cptsjb-r{right:30px;top:25px;width:300px;height:580px;}
+.cptsjb .tit-h4{ margin-bottom:10px;}
+.cptsjb-r li{height:34px; border-bottom:1px solid #26395F; line-height:34px; overflow:hidden;}
+.cptsjb-r li i{ float:left;width:20px;height:20px; margin:8px 8px 0; border-radius:20px; background:#203560; text-align:center; line-height:20px; color:#FFF; font-family:Tahoma; }
+.cptsjb-r li em{ display:inline-block; float:left;width:210px; overflow:hidden;}
+.cptsjb-r li span{ display:inline-block;float:left;width:42px;height:18px; margin-top:8px; border-radius:4px; background:#3070C8; text-align:center; line-height:18px; color:#FFF; font-size:13px;}
+.cptsjb-r li span.bg-cn{ background:#FF9C00;}
+.cptsjb-r li:first-child i{ background:#D92020;}
+.cptsjb-r li:nth-child(2) i{ background:#FF7800;}
+.cptsjb-r li:nth-child(3) i{ background:#F6CB58;}
+.jbts{}
+/* other */
+.pt20{ padding-top:20px;}
+.tip-txt1,.tip-txt2,.tip-txt3,.tip-txt4{ z-index:1;width:82px;height:22px; border:2px solid #FFF; border-radius:122px; font-size:12px; font-weight:bold; line-height:22px; text-align:center; color:#FFF; font-size:14px;}
+.tip-txt1{left:190px;top:90px; border-color:#1C7DFA; background:#1C5FBA;}
+.tip-txt2{right:130px;top:90px; border-color:#F50000; background:#A41424; }
+.tip-txt3{left:190px;bottom:100px; border-color:#999; background:#6B7484;}
+.tip-txt4{right:130px;bottom:100px; border-color:#00F5A7; background:#0BA788;}
+/* xing wei */
+/*首页*/
+.dateCon{padding:20px 50px;overflow:hidden;}
+.datebg{width:145px;height:145px;background:url(../images/datebg.png) no-repeat;float:left;position:relative;}
+.dateText{padding:50px 0 0 200px;}
+.dateText p{font-size:14px;color:#b3b3b3;line-height:24px;}
+.dateText a{display:block;width:100%;text-align:right;color:#638cbc;}
+.dateN{position:absolute;top:42px;left:45px;font-size:16px;color:#fff;text-align:center;line-height:30px;}
+.dateNB{font-size:38px;}
+/*企业动态监测-重点工业企业*/
+.keyimage{width:100%;overflow:hidden;}
+.keyimageL{width:50%;float:left;}
+.keyimageList{padding-top:50px;}
+.keyimageList li{width:100%;padding:5px 0;}
+.keyimageListTitle{display:block;font-size:16px;color:#00f5a7;line-height:30px;}
+.keyimageListCon{display:block;font-size:14px;color:#fff;}
+
+.result{width:100%;overflow:hidden;padding:0 20px 20px;}
+.result .keyimageListTitle{float:left;}
+.resultText{float:left;font-size:14px;color:#fff;line-height:30px;}
+
+/*经济监测预警-宏观经济走势*/
+.borderCon{padding:20px;}
+.tb{width:100%;}
+.tb tr.trbg{background:#142543;}
+.tb th,.tb td{text-align:center;font-size:16px;color:#fff;font-weight:normal;line-height:40px;}
+.tb tr{background:#172a4d;}
+.tb th{background:#2f4b7e;border-left:2px solid #1d345e;height:55px;line-height:55px;}
+.tb th:first-child {border-left:none;}
+.tb tr{border-top:1px solid #1b315a;}
+.tb tr:first-child{border-top:none;}
+.tb tr td:first-child{vertical-align:top;}
+.tb td i.bigCircle{padding:3px;background:#fff;display:block;margin-top:10px;}
+.tb td i{width:19px;height:19px;border-radius:20px;display:block;margin:0 auto;}
+.tb td p{line-height:40px;}
+.redbg{background:#f50000;}
+.bluebg{background:#1c7dfa;}
+.yellowbg{background:#fff100;}
+.greenbg{background:#00f5a7;}
+.aquebg{background:#79c2ff;}
+
+/*企业动态监测-重点工业企业*/
+.tdbg{margin:3px 0;display:block;background:#1c7dfa;border-radius:10px;color:#fff;}
+.percent{border:1px solid #f50000;border-radius:14px;color:#f50000;margin-left:10px;line-height:20px;padding:0 5px;}
+.percent1{border:1px solid #00f5a7;color:#00f5a7;}
+.resultText{float:left;font-size:14px;color:#fff;line-height:30px;}
+/*产业结构分析-重点行业专题分析3*/
+.enterprise{background:#172a4d;margin:0 30px 5px 0;padding:20px;}
+.enterprise h4{color:#FFFFFF;font-size:16px;}
+.enterprise p{color:#7e8493;font-size:14px;line-height:30px;}
+.enterprise p .distance{padding:0px 110px 0 10px;}
+.enterprise i{display:inline-block;width:16px;height:16px;background:url(../images/icon.png) no-repeat;}
+.enterprise .icon3{background-position:0 -16px;}
+.enterprise .p1 span{padding-right:53px;}
+.enterprise1 .p1 span{padding-right:60px;}
+.p2 span{padding-right:75px;}
+.enterprise .text-blue,.enterprise .text-red{font-weight:400;}
+.enterprise .text-blue{color:#1b6cd7;}
+.enterprise .text-red{color:#ff0932;}
+.enterprise1{background:#152747;}
+.enterprise{background:#172a4d;margin-right:30px;}
+
+/*区域经济专题*/
+.tb th p{line-height:24px;text-align:left;}
+.areaout{float:right;margin-top:60px;}
+.areaout li{padding:20px;}
+.areaout li p{font-size:14px;line-height:21px;background:url(../images/star.png) no-repeat left top;padding-left:25px;}
+.border{ overflow:hidden;}
+
+
+/* 重点行业专题分析 */
+.titive{font-size:14px;margin:30px 0 10px 100px;}
+.sec input{width:120px;background:#1b4f9a;border:1px solid #1c7dfa;color:#fff;margin:15px 30px 0 0;line-height:26px;padding-left:10px;}
+.sec i{position:absolute;display:inline-block;width:27px;height:25px;margin:-27px 0px 0 104px;background:url(../images/icon_1.jpg) no-repeat;}
+.sec ul{width:112px;background:#1b4f9a;padding:0 10px;}
+.sec ul li:hover{background:#1C7DFA;}
+
+
+
+
+
+
+
+

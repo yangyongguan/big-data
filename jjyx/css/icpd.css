@@ -1,0 +1,18 @@
+ .ctab_b a{border-bottom-width: 1px;}
+ .citem{margin-bottom: 10px;overflow: hidden;}
+ .cbox .citem2{border:none}
+ .citem .cleft {width: 64%;float: left;padding:0 10px;box-sizing: border-box;padding:0 10px;}
+  .citem2 .cleft{width: 64%;float: left;padding:0 10px;box-sizing: border-box;padding:0 10px;border:1px solid #ccc}
+ .citem .w100 {width:100%;}
+ .citem2 .cright {width: 35%;float: right;box-sizing: border-box;border:1px solid #ccc}
+ .citem .cleft h2,
+ .citem .cright h2{color: #000;font-size: 16px;height: 20px;margin: 10px 0;line-height: 20px;margin-bottom: 20px;}
+ .citem .cright h2:before{display: inline-block;content: '';width: 5px;background: red;height: 20px;line-height: 20px;position: relative;top:4px;margin-right: 5px;}
+ .citem .cleft h2:before{display: inline-block;content: '';width: 5px;background: red;height: 20px;line-height: 20px;position: relative;top:4px;margin-right: 5px;}
+ .page{overflow: hidden;}
+ .page span{font-size: 12px;color: #666666;float: left;height: 32px;line-height: 32px;margin-right: 10px;}
+ .page a{display: inline-block;width: 30px;height: 30px;line-height: 30px;text-align: center;border:1px solid #c2c2c2;float: left;color: #333333;}
+ .page input{float: left;border:1px solid #c2c2c2;height: 30px;line-height: 30px;width: 50px;}
+ .page .btn{width: 54px;border-radius: 3px;margin-left: 30px;}
+
+

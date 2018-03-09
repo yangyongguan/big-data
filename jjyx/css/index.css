@@ -1,0 +1,38 @@
+*{-webkit-user-select:none;}
+.banner{position:relative;top:40px;left:100px;text-align: center;}
+.banner > ul{text-align: center}
+.banner > ul > li{display:inline-block;list-style-type:none;background:#808080;width:10px;height:10px;border-radius:50%;cursor:pointer;z-index:3;position:relative;text-align:center;}
+.banner > ul > li >span.text{position:relative;color:#333!important;}
+.banner ul li.bg{display:inline-block;background:#ff3600;width:10px;height:10px;position:relative;}
+.button{width:100px;height:30px;line-height:30px;}
+.banner div.line{height:1px;position:relative;top:5px;background:#808080;}
+div.btnLeft,div.btnRight,div.stop,div.play{background: url("../images/timeLine.png"); cursor:pointer;display:inline-block;width:30px;height:30px;line-height:30px;margin:4px;position:relative;}
+div.btnLeft{ background-position: -0px -0px;margin-bottom:8px;position:relative;}
+div.btnRight{ background-position: -32px -0px; margin-bottom:8px;position:relative;}
+div.stop{display:inline-block;width:20px;height:15px;line-height:50px;  background-position: -70px -5px;position:relative;}
+div.play{display:inline-block;width:20px;height:15px;line-height:50px;  background-position: -100px -5px;position:relative;}
+.pie-map-div{position:relative;}
+#btnLeft{position:absolute;top:80%;right:20%;}
+#stop{position:absolute;top:82%;right:16%;}
+#btnRight{position:absolute;top:80%;right:10%;}
+#banner{position:absolute;top:90%;left:0%;}
+#topLeft{position:relative;}
+#topLeft .topLeft{width:200px;height:100%;color:#333;padding:0 10px;box-sizing:border-box;}
+.topLeft h2{color:#000;font-size:16px;height:20px;margin:10px 0;line-height:20px;margin-bottom:20px;}
+.topLeft h2:before{display:inline-block;content:'';width:5px;background:red;height:20px;line-height:20px;position:relative;top:4px;margin-right:5px;}
+#topLeft .topLeft .c1{margin-left:32px;width:80px;height:80px;border:5px solid red;border-radius:50%;line-height:80px;text-align:center;font-size:20px;}
+#topLeft .topLeft .c1 span{width:74px;height:74px;border:1px solid #ff952d;border-radius:50%;display:inline-block;margin-top:2px;}
+.topTitle{height: 80px;}
+.topTitle h2{font-size: 18px;color: #000000;line-height:40px;width: 100%}
+.topTitle span.fl{line-height: 32px;padding: 0 10px;color: #000}
+.topTitle2{text-align: center;}
+.topTitle2 .dk_container{float: none;display: inline-block;}
+.topTitle2 .fl{float: none}
+.tipbox h2{height: 36px;line-height: 36px;border-bottom:1px solid pink;font-size: 16px;font-weight: normal;color: red}
+.tipbox h2 small{font-size: 12px;color: #333;padding: 0 10px;}
+.tipbox p{line-height: 30px;color: #676565;font-size: 14px;}
+.tipbox p var{font-style: normal}
+.tipbox p .c1{color: #ff7432}
+.tipbox p .c2{color: #ff6868}
+.tipbox p .c3{color: #209600}
+.cp_b{padding-bottom: 10px;}

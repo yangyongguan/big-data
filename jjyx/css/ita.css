@@ -1,0 +1,16 @@
+.itabox { padding: 20px; color: #000; margin-bottom: 10px; box-sizing: border-box; }
+.itabox2 {width:
+100%;}
+.itabox p { line-height: 1.5; font-size: 15px; }
+.itabox p a { line-height: 1.5; font-size: 14px; color: #d40a02; text-decoration: underline; display: inline-block; padding: 0 5px }
+.itabox p span { display: inline-block; margin-right: 30px; font-size: 14px; color: #000000; }
+.itabox p span var { font-size: 22px; color: #e20900; }
+.half { width: 49%; }
+.itabox.np { padding: 0 10px; }
+.itabox.np2 { padding: 0 }
+.itabox thead td { color: #fff; }
+.citem h2 { color: #000; font-size: 16px; height: 20px; margin:10px 0; line-height: 20px;}
+.citem h2:before { display: inline-block; content: ''; width: 5px; background: red; height: 20px; line-height: 20px; position: relative; top: 4px; margin-right: 5px; }
+
+.itabox2 .itabox2{border:none}
+.testspan{line-height: 32px;padding:0 8px;}

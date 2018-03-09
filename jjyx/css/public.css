@@ -1,0 +1,179 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:14px/1.5 '\5FAE\8F6F\96C5\9ED1';}
+body{background:#0F2656;font-family:"微软雅黑";color:#FFF}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:80%}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#008AFF}
+sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+fieldset,img{border:0}
+input:focus,textarea:focus{outline:none}
+legend{color:#333}
+textarea{resize:none;overflow:auto;vertical-align:top}
+button{cursor:pointer;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+.cf{*zoom:1}
+.cf:before,.cf:after{display:table;content:"";line-height:0}
+.cf:after{clear:both}
+.clear{clear:both;width:1px;height:0;font-size:1px;visibility:hidden;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.tl{text-align:left}
+.tr{text-align:right}
+.tc{text-align:center}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.fn{font-weight:normal!important}
+.fb{font-weight:bold}
+.f12{font-size:12px}
+.f14{font-size:14px}
+
+/*margin*/
+.ml20{margin-left:20px;}
+
+/* public */
+.content{min-width: 1050px;margin:0 0 0 170px;padding:95px 25px 30px 50px;position: relative;}
+.back_btn{display: inline-block;position: absolute;color: #fff;top:75px;right:25px;background:#d40a02;width: 40px;text-align: center;padding: 5px 8px;border-radius: 5px;}
+.back_btn:hover{cursor: pointer;text-decoration: underline;}
+
+/* header */
+.header{position:fixed;width:100%;height:70px;background:#d40a02;overflow:hidden;color:#fff;z-index:99999999;padding-right:10px;box-sizing:border-box;}
+.header h1{float:left;}
+.header h1 a.logo{position: relative;display:block;float:left;height:70px;padding-left:74px;color:#FFF;text-decoration:none;font-size:20px;line-height:70px;text-shadow:2px 2px 1px rgba(255,255,255,.2);}
+.header .userArea{float:right;}
+.header .userArea .name{position: relative;float:left;height:16px;color:#fff;margin-top:27px;font-size:14px;line-height:16px;padding-left:20px;}
+.header .userArea span{float:left;height:16px;line-height:16px;margin-top:27px;padding-left:10px;margin-right:10px;}
+.header .userArea span.editPwd,.header .userArea span.singOut,.header .userArea span.help{border-left:1px solid #d2d2d2;}
+.header .userArea span.editPwd{position: relative;padding-left:30px;}
+.header .userArea .userName,
+.header .userArea .edit,.header .logo .logicon,.menu dl dt i{position: absolute;display: inline-block;
+	background: url("../images/public.png");
+}
+.header .userArea .userName{  top: 0; left: 0;background-position: -51px -0px; width: 15px; height: 15px; }
+.header .userArea .edit{ top: 0;  left: 5px; background-position: -28px -0px; width: 21px; height: 17px;  }
+.header .logo .logicon{  top: 10px;left: 25px; background-position: -28px -20px; width: 51px; height: 43px;}
+
+/* menu */
+.menu{position:fixed;left:0;top:0;height:100%;background:#1b1b1b;overflow-y:auto;overflow-x:hidden;text-shadow:2px 2px 2px rgba(0,0,0,.2);padding-top:78px;}
+.menu .inner{padding-bottom: 100px;}
+
+.menu dl{border-bottom:1px solid #000;box-shadow:0px 1px 1px #272727}
+.menu dl dt,.menu dl dd{width:200px;text-indent:53px;}
+.menu dl dt{position: relative;height:60px;border-bottom:1px solid #000000;box-shadow:0px 1px 1px #272727;line-height:60px;font-size:16px;}
+.menu dl dt i{ top: 19px;left: 25px;position: absolute; display: inline-block; width: 26px; height: 26px;}
+.menu dl dt i.d1{background-position: 0px -0px;}
+.menu dl dt i.d2{background-position: 0px -241px;}
+.menu dl dt i.d3{background-position: 0px -441px;}
+/*.menu dl dt.d2{background-position:19px -222px}*/
+/*.menu dl dt.d3{background-position:19px -423px}*/
+.menu dl dd{height:40px;line-height:40px;margin-top:5px;margin-bottom:5px;}
+.menu dl dd a{font-size:14px;color:#fff;cursor:pointer;}
+.menu dl dd.active{background:#d40a02}
+.menu dl dd:hover{background:#d40a02}
+.menu::-webkit-scrollbar{width:0;height:0;}
+.menu::-webkit-scrollbar-track-piece{-webkit-border-radius:0;}
+.menu::-webkit-scrollbar{width:10px;height:10px;}
+.menu::-webkit-scrollbar-thumb{height:50px;background-color:#666;-webkit-border-radius:5px;}
+.menu::-webkit-scrollbar-thumb:hover{height:50px;background-color:#9f9f9f;-webkit-border-radius:5px;}
+body{background:#eeeeee}
+.cbox{width:100%;min-width: 1025px;margin-bottom: 10px;}
+.cbox .ctitle{height:40px;border-bottom:2px solid #e21b10;margin-bottom:15px}
+.cbox .ctitle .name{display:inline-block;line-height:40px;font-size:18px;color:#000;}
+.cbox .ctab a{display:inline-block;min-width:93px;height:31px;border:1px solid #c4c4c4;margin-right:3px;border-bottom-width:0px;line-height:31px;text-align:center;font-size:14px;color:#000;background:#fff;}
+.cbox .ctab_w a{display:inline-block;width:auto;height:31px;border:1px solid #c4c4c4;margin-right:3px;border-bottom-width:0px;line-height:31px;text-align:center;font-size:14px;color:#000;background:#fff;padding:0 20px;}
+.cbox .ctab a:hover,.cbox .ctab a.active{background:#d40a02;color:#fff;border-color:#d40a02 }
+.cbox .citem{border:1px solid #c4c4c4;background:#fff;}
+.w6{width:59%;}
+.w4{width:39%;}
+.wHalf{width:49%;}
+.cbox table{width:100%;}
+.cbox table tr{line-height:40px;}
+.cbox table thead tr{background:#d40a02;}
+.cbox tbody tr:nth-child(even){background:#F4F4F4;}
+.cbox table td{text-indent:12px;}
+.cbox tbody td{color:#000}
+.cbox  .arrowUp span:after{display:inline-block;content:'';width:0;height:0;margin-left:5px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:10px solid #10af22;}
+.cbox  .arrowDown span:after{display:inline-block;content:'';width:0;height:0;margin-left:5px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:10px solid red;}
+
+.cbox_color{background: #fff;padding: 10px 20px;box-sizing: border-box;}
+.cbox_color .ctab{margin-bottom: 10px}
+.cbox_color .ctab a{border-bottom-width: 1px}
+/* back to top */
+#scrollToTop{cursor:pointer;position:fixed;_position:absolute;z-index:4;right:36px;bottom:49px;display:block;width:42px;height:42px;border:1px solid #BBB;border-radius:49px;background:#D8DDE0 url(../images/icoUp.png) center center no-repeat;filter:alpha(opacity=80);opacity:0.8;box-shadow:0 2px 2px 1px rgba(0,0,0,.15);-moz-transition:bottom 250ms ease-in-out;-webkit-transition:bottom 250ms ease-in-out;}
+#scrollToTop:hover{filter:alpha(opacity=100);opacity:1;box-shadow:0 3px 2px 1px rgba(0,0,0,.16);}
+#scrollToTop.off-screen{bottom:-100px;-moz-transition-duration:250ms;-webkit-transition-duration:250ms;}
+
+/**
+ * Default DropKick theme
+ *
+ * Feel free to edit the default theme
+ * or even add your own.
+ *
+ * See the readme for themeing help
+ *
+ */
+.dk_container{background-color:#fff;font-family:'Helvetica',Arial,sans-serif;font-size:12px;font-weight:bold;margin-bottom:18px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.dk_container:focus{outline:0;}
+.dk_container[disabled]{opacity:.4;}
+.dk_container a{cursor:pointer;text-decoration:none;}
+.dk_container[disabled] a{cursor:not-allowed;}
+.dk_toggle{border:1px solid #ccc;color:#333;padding:7px 45px 7px 10px;text-shadow:#fff 1px 1px 0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-webkit-transition:border-color .5s;-moz-transition:border-color .5s;-o-transition:border-color .5s;transition:border-color .5s;position:relative;}
+.dk_toggle:hover,.dk_toggle:focus{border-color:#8c8c8c;}
+.dk_toggle:after{position:absolute;top:45%;right:10px;content:'';border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #4B4B4B;}
+.dk_focus .dk_toggle{border-color:#40b5e2;box-shadow:0 0 5px #40b5e2;-moz-box-shadow:0 0 5px #40b5e2;-webkit-box-shadow:0 0 5px #40b5e2;}
+.dk_open{box-shadow:0 0 5px #40b5e2;-moz-box-shadow:0 0 5px #40b5e2;-webkit-box-shadow:0 0 5px #40b5e2;z-index:10;}
+.dk_open .dk_toggle{background-color:#ececec;border-color:#8c8c8c;color:#ccc;box-shadow:inset 0 -2px 5px #ccc;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;}
+.dk_open_top .dk_toggle{border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+.dk_open_top .dk_options,.dk_open_top .dk_options_inner{border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;}
+.dk_options{background:#fefefe;box-shadow:rgba(0,0,0,0.2) 0 2px 8px;-moz-box-shadow:rgba(0,0,0,0.2) 0 2px 8px;-webkit-box-shadow:rgba(0,0,0,0.2) 0 2px 8px;border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+.dk_options a{background-color:#fff;border-bottom:1px solid #999;font-weight:bold;padding:8px 10px;}
+.dk_options a:hover,.dk_options:focus,.dk_options .dk_option_current a{background-color:#0084c7;border-bottom-color:#004c72;color:#fff;text-decoration:none;text-shadow:rgba(0,0,0,0.5) 0 1px 0;}
+.dk_options li:last-child a{border-bottom:none;}
+.dk_options .disabled{cursor:default;}
+.dk_options .disabled a,.dk_options .dk_optgroup.disabled > span{color:#aaa;}
+.dk_options .disabled:hover a,.dk_options .disabled:focus a{cursor:default;background-color:#fff;border-bottom-color:#999;text-shadow:none;}
+.dk_options .dk_optgroup{padding-left:5px;background:#ddd;}
+.dk_options .dk_optgroup > span{display:block;padding:5px 10px 5px 5px;font-style:italic;color:#444;background:#ddd;border-bottom:;}
+.dk_options .dk_optgroup.disabled,.dk_options .dk_optgroup.disabled > span{background:#eee;}
+.dk_options_inner{max-height:250px;border:1px solid #8c8c8e;border-bottom-width:2px;border-bottom-color:#999;color:#333;text-shadow:#fff 0 1px 0;border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+.dk_container{display:none;float:left;}
+.dk_container a{outline:0;}
+.dk_toggle{display:-moz-inline-stack;display:inline-block;*display:inline;position:relative;zoom:1;}
+.dk_open{position:relative;}
+.dk_open .dk_options{display:block;}
+.dk_open .dk_label{color:inherit;}
+.dk_options{display:none;margin-top:-1px;position:absolute;right:0;width:100%;}
+.dk_options a,.dk_options a:link,.dk_options a:visited{display:block;}
+.dk_options_inner{overflow:auto;position:relative;-webkit-overflow-scrolling:touch;}
+.dk_container select{position:absolute;visibility:hidden;}
+.dk_mobile{position:relative;}
+.dk_mobile select{display:block;width:100%;height:100%;top:0;left:0;visibility:visible;opacity:0;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
+
+/* Here we reflect some of the styles from .dk_container to achieve the same visual also when without javascript */
+.dk_wrap{position:relative;display:inline-block;min-width:173px;float:left;margin-right:10px;margin-bottom:18px;background-color:#f5f5f5;overflow:hidden;border:1px solid #ccc;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-webkit-transition:border-color .5s;-moz-transition:border-color .5s;-o-transition:border-color .5s;transition:border-color .5s;}
+.dk_wrap:after{position:absolute;display:block;top:45%;right:10px;content:'';border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #4B4B4B;pointer-events:none;}
+.dk_wrap select{position:relative;display:block;width:110%;min-height:32px;padding:6px 49px 6px 6px;border:0;font-family:'Helvetica',Arial,sans-serif;font-size:12px;font-weight:bold;line-height:18px;color:#333;text-indent:0.01px;text-overflow:'';text-shadow:#fff 1px 1px 0;background:transparent;background:rgba(255,255,255,0);cursor:pointer;border-radius:0;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
+.dk_wrap select:focus{text-shadow:none;}
+.dk_wrap select::-ms-expand{display:none;}
+.cbox tbody td p{width: 350px;height: 40px;overflow: hidden;
+}
+
+/* Firefox only */
+@-moz-document url-prefix(){
+	.dk_wrap select{padding:7px 49px 5px 6px;}
+}
+
+/* IE 10 + IE 11 only */
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){
+	.dk_wrap select{padding:6px 47px 6px 8px;}
+}
+
+/* Opera 12 only */
+_:-o-prefocus,body:last-child .dk_wrap select{padding:7px 45px 5px 10px;}

@@ -1,0 +1,16 @@
+.msaWrap .ctab_b a{border-bottom-width: 1px;}
+.msaWrap .citem{margin-bottom: 10px;overflow: hidden;}
+.msaWrap .citem .cleft {width: 55%;float: left;padding:0 10px;box-sizing: border-box;}
+.msaWrap .citem .w100 {width:100%;}
+.msaWrap .citem .cright {width: 45%;float: right;padding:0 10px;box-sizing: border-box;}
+.msaWrap .citem .cleft h2,
+.msaWrap .citem .cright h2{color: #000;font-size: 16px;height: 20px;margin: 10px 0;line-height: 20px;margin-bottom: 20px;}
+.msaWrap .citem .cright h2:before{display: inline-block;content: '';width: 5px;background: red;height: 20px;line-height: 20px;position: relative;top:4px;margin-right: 5px;}
+.msaWrap .citem .cleft h2:before{display: inline-block;content: '';width: 5px;background: red;height: 20px;line-height: 20px;position: relative;top:4px;margin-right: 5px;}
+.msaWrap .page{overflow: hidden;}
+.msaWrap .page span{font-size: 12px;color: #666666;float: left;height: 32px;line-height: 32px;margin-right: 10px;}
+.msaWrap .page a{display: inline-block;width: 30px;height: 30px;line-height: 30px;text-align: center;border:1px solid #c2c2c2;float: left;color: #333333;}
+.msaWrap .page input{float: left;border:1px solid #c2c2c2;height: 30px;line-height: 30px;width: 50px;}
+.msaWrap .page .btn{width: 54px;border-radius: 3px;margin-left: 30px;}
+.msaWrap .citem .half{width: 49%;}
+

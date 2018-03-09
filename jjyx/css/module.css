@@ -1,0 +1,26 @@
+.tit-h3,.search-tag li.active,.tag-tit li a,a.btns-a,.form-box{background:url(../images/bg-line.png) repeat-x 0 0;}
+
+/* 模块 */
+.border{ width:100%;margin-bottom:30px;border: 1px solid #274271;border-radius:5px;background:#1b315a;}
+.border-w{width:100%;overflow:hidden;}
+.border1{width:48%;}
+.tit-h3{padding:7px 20px;border-bottom: 1px solid #274271;line-height:35px;border-radius:5px 5px 0 0;}
+.tit-h3 h3{font-size:16px;color:#FFF;border-left:6px solid #00f5a7;line-height:20px;padding-left:10px;}
+/*图表Title*/
+.tubiaoTitle{padding:20px;font-size:16px;color:#fff;}
+.tubiaoTitle i{display:block;width:7px;height:7px;background:#00f5a7;float:left;margin:10px 10px 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
