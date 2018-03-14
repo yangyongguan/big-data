@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <style>
+    html,body{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .chartItem{
+      height:100vh;
+      width:100%;
+    }
+  </style>
+</head>
+<body>
+<div id="chartId" class="chartItem"></div>
+</body>
+<script type='text/javascript' src='../static/js/echarts.min.js'></script>
+<script>
+    function initChart() {
+        document.body.innerHTML = '<div id="chartId" class="chartItem"></div>';
+        var dataList = JSON.parse(sessionStorage.getItem('dataList'));
+        var dom = document.getElementById('chartId');
+        if(dataList){
+            var lt = dataList[0].data.length;
+            if(lt>7){
+                dom.style.width = 100 + (lt-7)*14 + '%';
+                document.body.scrollTo(dom.scrollWidth,0);
+            }
+        }
+        var myChart = echarts.init(dom);
+        createChart(myChart,dataList);
+    }
+    function createChart(myChart,data){
+        var legendData = [],xData = [],seriesData = [];
+        for(var i=0;i<data.length;i++){
+            var obj = {name:data[i].name};
+            if(data[i].code=='db'){
+                obj.textStyle = {color:"#dddddd"}
+            }else if(data[i].code=='cl'){
+                obj.textStyle = {color:"#58ffc6"}
+            }else if(data[i].code=='ck'){
+                obj.textStyle = {color:"#74d5fd"}
+            }
+            legendData.push(obj);
+            var datas = [];
+            for(var j=0;j<data[i].data.length;j++){
+                if(i==0){
+                    var xStr = data[i].data[j].show_date.split(';');
+                    xData.push(xStr[0]+'\n'+xStr[1]);
+                }
+                datas.push({
+                    value: data[i].data[j].show_count,
+                    curVal: data[i].data[j].scount
+                });
+            }
+            seriesData.push({
+                name: data[i].name,
+                type:'line',
+                barWidth:15,
+                symbolSize:8,
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: "top",
+                            formatter:function (item) {
+                                return item.data.curVal;
+                            }
+                        }
+                    }
+                },
+                data:datas
+            });
+        }
+        var legend = {
+            top:'0', left:'4.5%',
+            icon:'circle',
+            data:legendData
+        };
+        if(data[0].data.length>7){
+            legend = {
+                top:'0', right:'4.5%',
+                icon:'circle',
+                data:legendData
+            }
+        }
+        var option = {
+            tooltip : {
+                show:false
+            },
+            legend: legend,
+            grid: {
+                top:'14%',
+                left: '40',
+                right: '40',
+                bottom: '5%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap: false,
+                    axisTick:{show:false},
+                    axisLine: {
+                        lineStyle: {
+                            color: "rgba(250,250,250,0.8)"
+                        }
+                    },
+                    axisLabel:{
+                        textStyle:{
+                            color:"#fff"
+                        }
+                    },
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: 'rgba(101,148,129,0.8)',
+                            type:'dotted',
+                            width: 1,
+                        }
+                    },
+                    data : xData
+                }
+            ],
+            yAxis : [
+                {
+                    name:'单位：箱',
+                    nameGap:25,
+                    nameTextStyle:{
+                        color:'#ddd'
+                    },
+                    axisLine: {show:false},
+                    axisTick:{show:false},
+                    axisLabel:{
+                        show:false
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    splitArea: {
+                        show: false
+                    }
+                }
+            ],
+            color:["#74d5fd","#58ffc6","#dddddd"],
+            series : seriesData
+        };
+        myChart.setOption(option,true);
+    }
+</script>
+</html>
